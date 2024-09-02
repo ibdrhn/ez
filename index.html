@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission form</title>
+    <style>
+        *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: 1rem sans-serif;
+  color: white;
+}
+.form{
+  width: 100vw;
+  height: 100vh;
+  background-color: #488bf7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form{
+  border: 5px double white;
+  padding: 20px 10px;
+}
+
+form h1{
+  font-size: 2rem;
+}
+lable{
+  font-size: 0.7rem;
+  text-transform: capitalize;
+}
+
+.form_input{
+  margin-block: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+input{
+  background-color: #fff;
+  border-radius: 10px;
+  border: none;
+  padding: 15px;
+  color: black;
+}
+input:focus{
+  outline: none;
+}
+
+    </style>
+</head>
+<body>
+    <section class="form">
+        <form action="#">
+          <h1>Login form</h1>
+          <div class="form_input">
+            <lable>username</lable>
+            <input type="text" required>
+          </div>
+          <div class="form_input">
+            <lable>Password</lable>
+            <input type="password" required>
+          </div>
+          <input type="file" name="" id="">
+          <input type="submit" value="Submit">
+        </form>
+      </section>
+</body>
+</html>
